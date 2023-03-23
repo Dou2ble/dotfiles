@@ -1,0 +1,19 @@
+* {
+	font-family: Roboto, RobotoMono Nerd Font;
+	padding-left: 2px;
+	padding-right: 2px;
+	font-size: 18px;
+	min-height: 36px;
+}
+
+box {
+	padding: 0px;
+	border-radius: 8px;
+	background-color: rgba(0,0,25,0.2);
+}
+
+label {
+    color: white;
+}
+
+

@@ -1,0 +1,117 @@
+#############
+## EXPORTS ##
+#############
+
+echo -e "\e];$PWD\e\\" && # set window title
+
+# Path
+export PATH="$PATH:$HOME/.nimble/bin"
+
+# Apps
+export EDITOR="micro"
+export VISUAL="codium"
+export PAGER="moar"
+export MANPAGER="moar -no-clear-on-exit"
+
+# Java
+export _JAVA_AWT_WM_NONREPARENTING=1
+export AWT_TOOLKIT=MToolkit
+
+# History
+export HISTFILE=$HOME/.mksh_history
+export HISTSIZE=10000
+export HISTCONTROL=ignoredups:erasedups
+
+# Misc
+export ARCH="x86_64"
+
+
+##############
+## KEYBINDS ##
+##############
+
+set -o emacs
+bind '^L'=clear-screen
+
+
+###############
+## FUNCTIONS ##
+###############
+
+function cd {
+	clear &&
+	builtin cd "$@" &&
+	echo -e "\e];$PWD\e\\" && # set window title 
+	exa --icons
+}
+
+
+###########
+## ALIAS ##
+###########
+
+# Verbose Commands
+alias mv="mv -v"
+alias cp="cp -v"
+alias rm="rm -v"
+alias ln="ln -v"
+
+# Colors
+alias grep="grep --color=always"
+alias fgrep="fgrep --colors=always"
+alias egrep="egrep --colors=always"
+alias diff="diff --colors=always"
+alias if="ip --color=always"
+alias ls="exa --icons"
+
+# Exit
+alias :wq="exit"
+alias :wq!="exit"
+alias :q="exit"
+alias :q!="exit"
+alias :x="exit"
+alias :x!="exit"
+alias ZZ="exit"
+alias ZQ="exit"
+alias q="exit"
+
+# Misc
+alias mkdir="mkdir -pv"
+alias watch="watch -n 1"
+alias doasedit="doas $EDITOR"
+alias myip="curl ipinfo.io/ip && echo"
+alias ex="7z e"
+alias code="codium"
+
+# Package Management
+alias pacsync="paru && pacmanfile sync && bash -c 'paru -Rs $(paru -Qtdq)'"
+alias pacclean="paru -Rs $(paru -Qtdq)"
+alias pacconf="$EDITOR $HOME/.config/pacmanfile/pacmanfile.txt"
+
+# PS1=$'\001\r''${|
+	# # Store exit code for later
+	# \typeset e=$?
+	# \typeset d=${PWD:-?}/
+	# \typeset p=~
+	# # Replace $HOME with ~
+	# [[ $p = ?(*/) ]] || d=${d/#$p\//\~/}
+	# d=${d%/}
+	# 
+	# # Hmmm...?
+	# \typeset m=${%d} n p=…
+	# (( m > 0 )) || m=${#d}
+	# (( m > (n = (COLUMNS/3 < 7 ? 7 : COLUMNS/3)) )) && d=${d:(-n)} || p=
+	# REPLY+="[$p$d]"
+	# # Add exit code
+	# (( e )) && REPLY+=" $e "
+	# \return $e
+# }'"$PS1 "
+
+PS1='╭──────────────
+│  $PWD
+├──────────────
+╰$ '
+
+nitch
+exa --icons
+

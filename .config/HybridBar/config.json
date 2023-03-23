@@ -1,0 +1,74 @@
+{
+    "hybrid": {
+        "namespace": "hybrid-bar",
+        "r": 10,
+        "g": 10,
+        "b": 100,
+        "a": 0.0
+    },
+    "left-box_left": {
+    	"widgets": {
+    		"label_workspaces": {
+    		 	"command": "python3 $HOME/.config/HybridBar/workspaces.py",
+    		 	"update_rate": 1000
+    		 }
+		}
+	},
+	"centered-box_centered": {
+		"widgets": {
+			"label_window_name": {
+				"command": "swaymsg -t get_tree | jq -r '..|try select(.focused == true)' | jq -r '.name'",
+				"update_rate": 1000
+			}
+		}
+	},
+    "right-box_right": {
+    	"widgets": {
+    		"label_ram_icon": {
+    			"text": " "
+    		},
+    		"label_ram": {
+    			"command": "$HOME/.config/HybridBar/ram.sh",
+    			"update_rate": 5000
+    		},
+    		"label_pipe1": {
+    		    "text": "|"
+    		},
+    		"label_cpu_icon": {
+    			"text": " "
+    		},
+    		"label_cpu": {
+    			"command": "python3 $HOME/.config/HybridBar/cpu.py",
+    			"update_rate": 5000
+    		},
+    		"label_pipe2": {
+    		    "text": "|"
+    		},
+			"label_disk_space_icon": {
+				"text": ""
+			},
+			"label_disk_space": {
+    			"command": "python3 $HOME/.config/HybridBar/disk_space.py",
+    			"update_rate": 10000
+    		},
+    		"label_pipe3": {
+    		    	"text": "|"
+    		},
+    		"label_battery_icon": {
+    			"command": "python3 $HOME/.config/HybridBar/battery_icon.py",
+    			"update_rate": 10000
+    		},
+    		"label_battery": {
+    			"command": "python3 $HOME/.config/HybridBar/battery.py",
+    			"update_rate": 10000
+    		},
+    		"label_pipe4": {
+    			"text": "|"
+    		},
+    		"label_dox": {
+    		    "command": "curl ipinfo.io/ip; echo",
+    		    "update_rate": 100000
+    		}	
+    	}
+    }
+}

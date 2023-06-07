@@ -1,4 +1,91 @@
-*
-!*/
+# i have no idea what most of these are
 
-!.gitignore
+albert/
+archive/
+# autostart/
+# bspwm/
+cef_user_data/
+croc/
+dconf/
+discordcanary/
+Electron/
+epiphany/
+font-manager/
+fontconfig/
+foot/
+gh/
+gnome-boxes/
+godot/
+# gtk-3.0/
+gtk-4.0/
+# gzdoom/
+handlr/
+helix/
+# htop/
+HybridBar/
+Hyper/
+inkscape/
+JetBrains/
+kate/
+KDE/
+kde.org/
+keepassxc/
+# Kvantum/
+libreoffice/
+libvirt/
+lite-xl/
+lximage-qt/
+# lxqt/
+menus/
+micro/
+monero-project/
+# Mousepad/
+nemo/
+neofetch/
+neowofetch/
+nextjs-nodejs/
+nushell/
+nvim/
+nwg-look/
+nyxt/
+obs-studio/
+openbox/
+# pacmanfile/
+pavucontrol-qt/
+pcmanfm-qt/
+# peaclock/
+# picom/
+Pinta/
+presets/
+pulse/
+qBittorrent/ 
+qterminal.org/
+# qutebrowser/
+rncbc.org/
+s-tui/
+screengrab/
+sirula/
+# SpeedCrunch/
+sway/
+terminology/
+trizen/
+unity3d/
+VirtualBox/
+VSCodium/
+# wezterm/
+wlogout/
+xonsh/
+xsettingsd/
+# .gitignore
+albert.conf
+katemetainfos
+katerc
+katevirc
+kconf_updaterc
+kdeglobals
+krusaderrc
+mimeapps.list
+pavucontrol.ini
+QtProject.conf
+user-dirs.dirs
+user-dirs.locale

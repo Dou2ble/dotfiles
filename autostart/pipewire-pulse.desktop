@@ -1,0 +1,5 @@
+[Desktop Entry]
+Exec=pipewire-pulse
+Name=pipewire-pulse
+Type=Application
+Version=1.0

@@ -1,0 +1,16 @@
+date-padding 0
+date-padding 10
+date-padding 1
+set seconds off
+set seconds on
+set seconds off
+hepl
+help
+help
+helf
+view seconds
+help
+help
+help
+timer 00:30:00
+timer 00h:30m:00s

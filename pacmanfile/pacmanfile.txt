@@ -1,0 +1,384 @@
+#!/bin/bash
+# ^ this line is here to get syntax hilighting in micro
+
+#################
+## Base system ##
+#################
+elogind-dinit
+base
+dinit
+linux
+linux-headers
+artools-base
+neofetch
+
+########################
+## Firmware & Drivers ##
+########################
+linux-firmware
+amd-ucode
+mesa
+mesa-vdpau
+libva-mesa-driver
+vulkan-radeon
+xf86-video-amdgpu
+lib32-mesa
+lib32-mesa-vdpau
+lib32-libva-mesa-driver
+lib32-vulkan-radeon
+
+################
+## Base Devel ##
+################
+artix-keyring
+autoconf
+automake
+binutils
+bison
+debugedit
+fakeroot
+file
+findutils
+flex
+gawk
+gcc
+gettext
+grep
+groff
+gzip
+libtool
+m4
+make
+pacman
+patch
+pkgconf
+sed
+# sudo (bloat)
+texinfo
+which
+
+##########
+## Boot ##
+##########
+grub
+artix-grub-theme
+efibootmgr
+os-prober
+
+##########
+## LXQT ##
+##########
+lximage-qt
+lxqt-about
+lxqt-admin
+lxqt-archiver
+lxqt-config
+lxqt-globalkeys
+lxqt-notificationd
+lxqt-openssh-askpass
+lxqt-panel
+lxqt-policykit
+lxqt-powermanagement
+lxqt-qtplugin
+lxqt-runner
+lxqt-session
+lxqt-sudo
+lxqt-themes
+# obconf-qt
+# openbox
+pavucontrol-qt
+pcmanfm-qt
+# qterminal
+# screengrab
+
+###########################
+## Window Manager & Rice ##
+###########################
+# # Sway but with animations
+# swayfx
+# Xorg packages
+xorg-meta
+# # allows swayfx to behave like herbsluftwm or bspwm
+# autotiling
+# # XDG folders
+# dex
+# # set wallpaper
+# swaybg
+# # wayland native status bar with config written in json
+# hybrid-bar
+# # lock the screen
+# swaylock
+# # power screen
+# wlogout
+# # screenshot utility
+# grim
+# # select area for grim
+# slurp
+# # allows applications to interact with the wayland clipboard
+# wl-clipboard
+# # gtk theme collection
+# matcha-gtk-theme
+# papirus with custom folders
+papirus-folders
+# # notification deamon
+# swaync
+kvantum
+lxqt-arc-dark-theme-git
+picom-pijulius-git
+artix-icons
+arc-gtk-theme
+i3lock-fancy-git
+
+# tiling window manager
+bspwm
+
+###########
+## Sound ##
+###########
+pipewire
+pipewire-pulse
+wireplumber
+lib32-pipewire
+lib32-libpipewire
+
+########################
+## package management ##
+########################
+# misc pacman related scripts written by the community
+pacman-contrib
+# to allow arch's extra and community repos in artix
+artix-archlinux-support
+# AUR helper
+paru
+# Declarative configs for pacman and paru
+pacmanfile
+# good to have just in case
+downgrade
+# Package manager with containerization
+flatpak
+# required for flatpak
+xdg-desktop-portal-lxqt
+
+########################
+## terminal emulators ##
+########################
+# kinda bloated but it lets me have a pulsing cursor
+wezterm
+# uses pretty much zero ram
+rxvt-unicode
+
+###############
+## CLI tools ##
+###############
+# rainbows
+lolcat
+# acpi -b to show battery
+acpi
+# cat with support for syntax hilighting and linenumbers
+bat
+bat-extras
+# version control
+git
+# man pages
+man-db
+# man pages written in swedish
+man-pages-sv
+# easy to use terminal text editor
+micro
+# like vim but with lua
+neovim
+# sudo alternative
+opendoas
+wget
+which
+# pager with support for 2D scrolling
+moar
+# fancy ls
+exa
+# blazingly fast systemfetcher written in nim
+nitch-git
+# system monitor
+htop
+# system monitor with some other info
+s-tui
+# execute windows bins
+wine
+wine-mono
+# minimalistic and POSIX shell
+mksh-bin
+# print a directory tree
+tree
+# monero miner
+xmrig
+# check time
+peaclock
+# check for non-free packages
+vrms-arch-git
+# locate command
+plocate
+# ifconfig and some other stuff
+net-tools
+# change the brigthness from the terminal
+brightnessctl
+# a simple fuzzy finder
+fzf
+# check shell script quality
+shellcheck
+# a shorter alternative to manpages
+tldr
+# view the progress of operations
+progress
+
+
+###############
+## GUI tools ##
+###############
+# take screenshots
+flameshot
+# gnome diff
+meld
+# gnome archive manager
+file-roller
+# bloated af browser 
+firefox
+# garuda browser
+firedragon
+# # less blaoted browser
+# qutebrowser
+# TODO: make my own this one dosent work anymore
+# # image viewer with mouse support
+# imv
+# # rofi wayland alternative
+# sirula
+# # cinnamon file manager
+# nemo
+# xfce text editor (lxqt lacks a text editor)
+mousepad
+# libre visual-studio-code
+vscodium-bin-marketplace
+# proprietary but nice c# ide
+rider
+# # wayland native theme changer
+# nwg-look-bin
+# # color picker compatible with wayland
+# wl-color-picker
+# easy to use image editor
+pinta
+# chat client that i fucking hate so much
+discord-canary
+# shit tool i need for school
+packettracer
+# office suite
+libreoffice-fresh
+# making small modifications to pdfs
+okular
+# based crypto
+monero-gui
+# password manager
+keepassxc
+# easy to use KVM manager
+gnome-boxes
+# QEMU (dependency of gnome-boxes)
+qemu-desktop
+# change default MIME applications
+selectdefaultapplication-fork-git
+# required for school
+virtualbox-host-dkms
+virtualbox
+# generate dummy text
+lorem
+# linux isos
+qbittorrent
+# OBS studio
+obs-studio-git
+# svg editor
+inkscape
+# a calculator with the speed of calc but with more features
+speedcrunch
+
+####################
+## Dinit services ##
+####################
+# easy to use deamon for networking
+networkmanager-dinit
+# display manager
+lightdm-dinit
+lightdm-gtk-greeter
+# clock sync
+ntp-dinit
+# Printing
+cups-dinit
+# KVM
+libvirt-dinit
+
+
+###########
+## Games ##
+###########
+gzdoom
+doom1-wad
+osu-lazer-bin
+steam
+
+
+###############
+## Languages ##
+###############
+# python3
+python
+# # needed for bar script
+# python-psutil
+# pip package manager
+python-pip
+# python lsp
+pyright
+# tool for installing cargo and rustc
+rustup
+# tool for installing nimble and nim
+choosenim
+# c sharp
+dotnet-sdk
+# foss gameengine
+godot
+# bloated gnu shit
+bash
+bash-completion
+# if posix and python had a baby
+xonsh
+# FOSS ksh
+mksh-bin
+# fast posix shell
+dash
+
+###############
+## Libraries ##
+###############
+
+# SDL 2
+sdl2
+sdl2_image
+sdl2_mixer
+sdl2_ttf
+sdl2_gfx
+sdl2_net
+
+###########
+## Fonts ##
+###########
+# font management tool
+font-manager
+ttf-hack
+ttf-hack-nerd
+ttf-liberation
+ttf-liberation-mono-nerd
+ttf-roboto
+ttf-roboto-mono
+ttf-roboto-mono-nerd
+# microsoft fonts
+ttf-ms-fonts
+# more microsoft fonts
+ttf-vista-fonts
+# large collection of google fonts
+noto-fonts
+
+

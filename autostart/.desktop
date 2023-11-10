@@ -1,6 +1,0 @@
-[Desktop Entry]
-DBusActivatable=true
-Exec=kclockd
-Name=
-Type=Application
-X-Flatpak=

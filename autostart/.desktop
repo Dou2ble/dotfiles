@@ -1,5 +1,6 @@
 [Desktop Entry]
-Exec=pipewire
-Name=pipewire
+DBusActivatable=true
+Exec=kclockd
+Name=
 Type=Application
-Version=1.0
+X-Flatpak=

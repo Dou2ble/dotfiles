@@ -1,0 +1,25 @@
+# wal -Rn
+# xwallpaper --zoom $(cat ~/.cache/wal/wal)
+
+# xrdb -merge .Xresources
+wal -ni ~/Pictures/wallpapers/sunset-glow.png
+xwallpaper --zoom ~/Pictures/wallpapers/sunset-glow.png
+xinput set-prop 11 "libinput Disable While Typing Enabled" 0
+slstatus &
+/usr/lib/mate-polkit/polkit-mate-authentication-agent-1 &
+# pipewire &
+# pipewire-pulse &
+# wireplumber &
+setxkbmap -layout 'us,se' -variant 'colemak,nodeadkeys' -option 'grp:rctrl_toggle' 
+xset r rate 300 100
+# xcompmgr -cfD 8 &
+wired --run &
+xcompmgr &
+# sh -c 'while true; do picom; done' &
+
+~/Scripts/battery-warning.sh &
+# yambar &
+exec dwm
+# # exec leftwm
+# # exec startlxqt
+# exec stumpwm

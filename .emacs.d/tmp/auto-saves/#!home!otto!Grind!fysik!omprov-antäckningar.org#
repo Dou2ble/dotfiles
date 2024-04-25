@@ -1,0 +1,40 @@
+
+* Extra viktigt
+värmekapaciteten och smältentalpitet i boken ska gångras med $10^3$
+
+* Sammanfattande av begräpp
+** Yttre och inre energi
+$W_{ki} = N \times \frac{3}{2}kT$
+$k \approx 1.38 \times 10^{-23}$
+
+Yttre enrgi är den vanliga energin vi brukar tänka oss. En luftballong som rör sig med hastigheten av 2m/s och väger 100kg skulle då ha en yttre energi som reflekterar denna rörelse.
+
+$W_{ky} = \frac{1}{2}mv^2 = \frac{1}{2} \times 100 \times 2.0^2J = 200J$
+
+inre energi är rörelse energin av molekylerna där inne i ballongen.
+
+massan för en helium molekyl
+$m_{He} = 6.64 \times 10^{-27}$
+
+antalet molekyler i ballongen
+$N=\frac{m}{m_{He}} = \frac{100}{6.64 \times 10^{-27}} \approx 1.51 \times 10^{28} st$
+
+$t = 20$
+$T = t + T_0$
+$T = 20 + 273 = 297$
+
+Nu kan vi räkna ut den inre kinetiska energin
+$W_{ki} = N \times \frac{3}{2}kT = 1.51 \times 10^{28} \times \frac{3}{2} \times 1.38 \times 10^{-23} \times 297 = 92833290$
+och vi får typ rätt svar
+
+** Räkna på det som smälter
+Så om vi har en massa is som är 0 grader celsius och vi ska smälta denna is. Vi häller på 5 kg vatten som är 40 grader celsius. Hur mycket av denna is smälter då?
+
+jo slutet av detta scenariot kommer att vara att allt vatten har nått 0 grader celsius. Detta kommer ju så klart avge värmeenergi så det är viktigt att vi räknar ut hur mycket det är.
+$Q= cm\times \Delta T = 5 \times 4.18 \times 10^3 \times (40-0)J = 838000J$
+
+nu när vi vet hur mycket energi vi har att spela med så kan vi använda formeln för smältvärme för att komma fram till hur mycket som vi kommer att kunna göra med denna energi
+$Q = 838000J$
+$I_s = 334 \times 10^3$
+$Q = I_s \times m \rightarrow m = \frac{Q}{I_s}$
+$m = \frac{Q}{I_s} = \frac{838000}{334 \times 10^3}kg \approx 2.5 kg$

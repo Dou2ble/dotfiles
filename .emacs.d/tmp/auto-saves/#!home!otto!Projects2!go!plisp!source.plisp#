@@ -1,0 +1,8 @@
+fun var(value: Any) {
+     return value
+}
+
+fun main() {
+     message < var("Hello, World")
+     std.print(message)
+} 

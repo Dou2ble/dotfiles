@@ -1,0 +1,173 @@
+#+TITLE: Anteckningar
+#+AUTHOR: Otto Roming
+
+* Egna anteckningar ur bocken
+** Atomkärnan 325
+*** Protontalet
+Betecknat Z (samma som atomnummeret)
+
+*** Neutrontalet
+Betecknat N
+
+*** Nukleon
+Protonerna och neutronerna. Alltså atomens kärna.
+
+*** Nukleontal
+*kallas också för masstal*
+Betecknat A
+$A = N + Z$
+
+*** 
+
+** Krafter och energi i atomkärnan 328
+** Enkla kärnrektioner 332
+** Mer om radioaktivitet 339
+** Halveringstid 345
+** Fission av tunga kärnor 351
+** Fusion av lätta kärnor 359
+** Biologiska verkningar 362
+** Uppgifter 370
+
+* Genomgångar
+** 2024-04-16
+*** Kärnmassan = nuklidmassa - elektronmassa
+$m_1 = m-m_e$
+
+*** kärnmassan = protonmassa + neutronmassa
+$m_2 = m_p+2m_n$
+
+*** Bestäm kärnmassan och bindnings energi för tritium: $^3_1H$ och svara energi i eV enhet
+$E = \Delta mc^2 = (m_2-m_1)c^2$
+$\Delta m$: massdefekt ($kg$)
+$E$: bindningenrgi ($J$)
+$c$: $3 \times 10^8 m/s$: ljushastighet
+
+** 2024-04-18
+Grundtillstånd är när det finns lika måna elektroner och protoner i en atom
+
+** 2024-04-19
+*** Alfastrålning
+$^4_2He$: $\alpha$ sönderfall
+*** Betastrålning
+**** Positiv
+$^0_1e^+$: $\beta^+$
+**** TODO Negativ
+$$
+*** TODO Gammastrålning
+$^0_0\gamma$
+
+*** Alfastrålning Exempel
+**** Exempel 1
+***** Moderkärna
+$^{241}_{95}Am \rightarrow ^4_2He + ^{237}_{93}Np$ 
+A: $241-4 = 237$
+Z: $95-2=93$
+
+***** Dotterkärna
+$^{237}_{93}Np \rightarrow ^4_2He + ^{233}_{91}Pa$
+A: $237-4 = 233
+Z: $93-2=91$
+
+**** Exempel 2
+*Alfapartikeln stoppas mycket lätt av material i dess väg. Den man exempelvis inte tränga igenom det yttersta lagret hud på människokroppen. Partikeln är bara farlig om den kommer i kontakt direkt med levande celler. Men om man till exempel äter något som innehåller alfapartiklar så kan det vara farligt eftersom alfapartikeln är cancerframkallande.*
+
+Radiumkärnan $^{226}_{88}Ra$ sänder ut alfastrålning.
+
+***** Skriv reaktionsformeln
+$^{226}_{88}Ra \rightarrow ^4_2He + ^{222}_{86}Rn$
+$^{222}_{86}Rn \rightarrow ^4_2He + ^{218}_{84}Po$
+
+***** Beräkna frigjorda energin vid reaktionen och svara i eV
+$E = \Delta mc^2 = (m_f - m_e)c^2$
+$\Delta m = m_{Ra} - (m_{He} + m{Rn})$
+$\Delta m = 226.025408 - (4.002603 + 222.017576)U = 0.005229U$
+$\Delta m = 0.005229 \times 1.6605\times 10^{-27} kg$
+$E = \Delta mc^2  = 0.005229 \times 1.6605\times 10^{-27} \times (3 \times 10^8)^2 = 0.0000000000008$
+
+** 2024-04-23
+*** Strålningar
+**** Alfastrålning
+$\alpha$
+
+$^A_ZX \rightarrow ^4_2He + ^{A-4}_{Z-2}Y$
+
+**** Betastrålning
+det finns två typer av betastrålning
+$\beta^+$ och $\beta^-$
+
+***** Neutron
+$\beta^-$
+
+$\overline v$: antineutrino
+$^0_{-1}e$: elektron
+$^A_ZX \rightarrow ^0_{-1}e + \overline{v} + ^A_{Z+1}Y$
+
+***** Proton
+$\beta^+$
+
+$^0_1e$: positron
+$v$: neutrino
+$^A_ZX \rightarrow ^0_1e + v + ^A_{Z-1}Y$
+
+**** Gammastrålning
+$\gamma$
+
+Gammastrålning är den tredje av tre typer av joniserande strålning. Gammasönderfall är lite speciellt eftersom det inte är någon partikel som sänds ut i sönderfallet utan det är elektromagnetisk strålning (foton) som sänds ut. Ett gammasönderfall sker nämligen då en kärna övergår från ett exciterat tillstånd till grundtillstånd genom att avge elektromagnetisk strålning.
+
+$X^*$: dotterkärna
+$^A_ZX^* \rightarrow ^0_0\gamma + ^A_ZX$
+ 
+***** Exempel
+Radium $^{226}_{88}Ra$ sönderfaller genom att sända ut en alfapartikel. Dotterkärnan som bildas är exciterad och avger en gammapartikel med energin 0.1918 Mev för att nå sitt grundtillstånd.
+
+Bestäm vilken energi alfapartikeln har.
+
+** 2024-04-25
+*** Sönderfall med kedjereaktion
+$^{231}_{90}Th \rightarrow ^0_{-1}e + \overline v + ^{231}_{91}Pa$
+$^{231}_{91}Pa \rightarrow ^4_2He + ^{227}_{89}Ac$
+$^{227}_{89}Ac \rightarrow ^4_2He + ^{223}_{87}Fr$
+
+*** Joniserande strålning
+ * Atomerna förvandlas till joner som kan leda till celldöd
+ * Radioaktivitet kan vara skadlig
+ * Det mesta av strålningen kommer från radon i våra bostäder
+ * Strålningen kan också vara till nytta, för att till exempel döda cancerceller
+
+*** Halveringstid
+ * Anger hur lång tid sombehövs för att hälften av atomerna ska sönderfalla
+ * Kol-14 metoden används för att bestämma åldern på fornlämmningar och fossil.
+ * Halveringstiden för kol-14 är 5730 år.
+ * Fungerar bara på något som varit levande och som är upp till 50 000 år gamla.
+
+*** TODO Sönderfallslagen
+I ett radioaktivt ämne avtar antalen atomk ärnor med tiden
+
+$N_0$: antal kärnor vid t=0 (vid starten)
+$N$: antal kärnor vid en viss tid
+$t$: tiden
+$T_{1/2}$: halveringstiden
+
+$N = N_0(0.5)^{\frac{t}{T_{1/2}}}$
+
+*** TODO Masslagen
+$m=m_0(0.6)^{\frac{t}{t_{1/2}}} = m_0 2 \frac{-t}{T_{1/2}}$
+$m = m_0e^{-\ln{2}\times \frac{t}{T_{1/2}}}$
+
+*** Exempel
+**** En brandvarnare av vanlig typ innehåller det radioaktiva ämnet Americum: Am-241 som har en halveringstid på 432 år.
+
+***** Bestäm hur stor andel av preparatet som återstår efter 100 år
+85.17597834273%
+
+***** I brandvarnaren innehåller 20µg massa av Am-241. Hur mycket av ämnet finns kvar efter ett år? 100 år och 432 år?
+****** 1 år
+19.967935583428 µg
+****** 100 år
+17.035195668546 µg
+****** 432 år
+10 µg
+
+***** När finns 25% kvar av Americum i brandvarnaren?
+864 år
+

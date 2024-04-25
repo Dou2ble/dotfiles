@@ -1,0 +1,10 @@
+.cache/
+auto-save-list/
+eln-cache/
+games/
+straight/
+url/
+.lsp-session-v1
+backup.el
+config.el
+backups/

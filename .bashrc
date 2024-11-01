@@ -16,7 +16,7 @@ alias rmdir='rmdir -v'
 alias diff='diiff --color=auto'
 alias grep='grep --color=auto'
 alias ip='ip --color=auto'
-alias ls='ls --color=auto'
+alias ls='eza --icons --color=auto'
 
 export MANPAGER="less -R --use-color -Dd+r -Du+b"
 export MANROFFOPT="-P -c"
@@ -31,4 +31,6 @@ export PATH="/home/otto/.local/bin:$PATH"
 export PATH="/home/otto/.config/emacs/bin:$PATH"
 
 PS1='[\u@\h \W]\$ '
+
+fastfetch
 
